@@ -7,8 +7,6 @@
     <title>My Portfolio</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- owl carousel css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- magnific popup css-->
@@ -25,8 +23,6 @@
 </head>
 <body>
   <div id="progressbar"></div>
-  <div id="scrollPath"></div>
-  <div id="container"></div>
   <header class="header-area">
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -66,9 +62,9 @@
     <section class="hisection" data-scroll-index="0" id="home">
       <div class="banner">
         <video autoplay muted loop>
-          <source src="rain.mp4" video="rain/mp4" />
+          <source src="rain.mp4" type="video/mp4" />
         </video>
-        <div class="content" filter: blur(15px);>
+        <div class="content">
           <h1>"저" 란 사람은</h1>
           <h2></h2>
           <h3>되기 위해 살아갑니다</h3>
@@ -85,18 +81,17 @@
                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                   <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>         
+                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
   </header>
   <!-- header section end -->
   <section class="mainclass">
-    <lottie-player id="firstLottie" src="메인 페이지.json">"></lottie-player>
+    <lottie-player id="firstLottie" src="메인 페이지.json"></lottie-player>
   </section>
   <!-- about us section start -->
   <section class="about-area section-padding" data-scroll-index="1" id="about" >
@@ -303,7 +298,7 @@
   </section>
   <!-- services section end -->
   <section class="portfolio">
-    <lottie-player id="main" src="이동 페이지.json">"></lottie-player>
+    <lottie-player id="main" src="이동 페이지.json"></lottie-player>
   </section>
   <!-- portfolio section start -->
   <section class="img-gallery section-padding" data-scroll-index="3" id="portfolio">
@@ -427,9 +422,6 @@
     </div>
   </section>
     <!-- portfolio section end -->
-    <!-- call to action start -->
-
-    <!-- call to action end --> 
     <!-- testimonials section start -->
     <section class="testimonials section-padding" data-scroll-index="4" id="testimonials" style="margin-bottom: 100px;">
       <div class="row justify-content-center">
@@ -458,39 +450,37 @@
         <div class="video-list-container">
     
           <div class="list active">
-            <video src="https://www.youtube.com/embed/yNg7zA8J87Q?si=llfn6PeQTWgre4Ey" 
-              class="list-video">
-            </video>
+            <div class="list-video" data-src="https://www.youtube.com/embed/yNg7zA8J87Q?si=llfn6PeQTWgre4Ey"></div>
             <h3 class="list-title">2022 경상고등학교 홍보영상</h3>
           </div>
-    
+
           <div class="list">
-              <video src="https://www.youtube.com/embed/EtVj5oIbZZI?si=Y7KH2o4oARoKczQb" class="list-video"></video>
+              <div class="list-video" data-src="https://www.youtube.com/embed/EtVj5oIbZZI?si=Y7KH2o4oARoKczQb"></div>
               <h3 class="list-title">2021 경상롤드컵 오프닝 영상</h3>
           </div>
-    
+
           <div class="list">
-              <video src="https://www.youtube.com/embed/_aXdBsvoTng?si=raoVnItpqE1TgGHT" class="list-video"></video>
+              <div class="list-video" data-src="https://www.youtube.com/embed/_aXdBsvoTng?si=raoVnItpqE1TgGHT"></div>
               <h3 class="list-title">2022 경상롤드컵 오프닝 영상</h3>
           </div>
-    
+
           <div class="list">
-              <video src="https://www.youtube.com/embed/nos82iFOXSo?si=PMYbVTfkHACYwka0" class="list-video"></video>
+              <div class="list-video" data-src="https://www.youtube.com/embed/nos82iFOXSo?si=PMYbVTfkHACYwka0"></div>
               <h3 class="list-title">중학생 대상 경상롤드컵 화면 전환 영상</h3>
           </div>
-    
+
           <div class="list">
-              <video src="https://www.youtube.com/embed/ze45Ppr12w0?si=EJzNsd_NHcDZtsC" class="list-video"></video>
+              <div class="list-video" data-src="https://www.youtube.com/embed/ze45Ppr12w0?si=EJzNsd_NHcDZtsC"></div>
               <h3 class="list-title">수능응원 영상</h3>
           </div>
-    
+
           <div class="list">
-              <video src="https://www.youtube.com/embed/6teR3wVCxOE?si=mzE7wrqPPTxwSiL7" class="list-video"></video>
+              <div class="list-video" data-src="https://www.youtube.com/embed/6teR3wVCxOE?si=mzE7wrqPPTxwSiL7"></div>
               <h3 class="list-title">2020 경상롤드컵 오프닝 영상</h3>
           </div>
-    
+
           <div class="list">
-              <video src="https://www.youtube.com/embed/Wp5Izk2OVQ8?si=Mu1v8Owbapr7j8B-" class="list-video"></video>
+              <div class="list-video" data-src="https://www.youtube.com/embed/Wp5Izk2OVQ8?si=Mu1v8Owbapr7j8B-"></div>
               <h3 class="list-title">졸업영상</h3>
           </div>
     
@@ -499,9 +489,6 @@
     </div>
     </section>
     <!-- testimonials section end -->
-    <!-- pricing section start -->
-
-    <!-- pricing section end -->
     <!-- faq section start -->
     <section id="Ask" data-scroll-index="5" style="margin-bottom: 300px;">
       <div class="faq section-padding">
@@ -572,9 +559,6 @@
       </div>
     </section>
     <!-- faq section end -->
-    <!-- contact us section start-->
-    
-    <!-- contact us section end-->
     <!-- footer section start -->
     <footer class="footer">
       <div class="container">
@@ -593,10 +577,6 @@
   <script src="js/popper.min.js"></script>
   <!-- scrollit js -->
   <script src="js/scrollit.js"></script>
-  <!-- parallax js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  <!-- owl carousel js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!-- magnific popup js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <!-- isotope js -->
