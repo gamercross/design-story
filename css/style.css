@@ -107,25 +107,6 @@ a,a:hover
 {
     color: var(--main-color);
 }
-.owl-carousel .owl-dots
-{
-    padding: 0 15px;
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-carousel button.owl-dot 
-{
-    height: 6px;
-    width: 24px;
-    background-color: #dddddd;
-    display: inline-block;
-    margin: 0 4px;
-    border-radius: 5px;
-}
-.owl-carousel button.owl-dot.active 
-{
-    background-color: var(--main-color);
-}
 /* navbar */
 .navbar
 {
@@ -746,7 +727,9 @@ a,a:hover
 
 .video-container .video-list-container .list .list-video{
     width: 100px;
+    height: 56px;
     border-radius: 5px;
+    background: #000;
 }
 
 .video-container .video-list-container .list .list-title{

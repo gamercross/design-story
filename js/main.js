@@ -19,16 +19,6 @@ $(document).ready(function()
             $(".navbar").removeClass("navbar-shrink");
         }
     })
-    // parallax js
-    function parallaxMouse()
-    {
-        if($('#parallax').length)
-        {
-            var scene = document.getElementById('parallax');
-            var parallax = new Parallax(scene);
-        }
-    }
-    parallaxMouse();
     // skills bar
     $(window).scroll(function()
     {
@@ -63,25 +53,7 @@ $(document).ready(function()
         type: 'image',
         gallery: { enabled: true}
     })
-    // owl carousel
-    $('.testimonial-slider').owlCarousel({
-        loop:true,
-        margin:0,
-        responsiveClass:true,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:1,
-            },
-            600:{
-                items:2,
-            },
-            1000:{
-                items:3,
-            }
-        }
-    })
-    // navbar collapse 
+    // navbar collapse
     $(".nav-link").on("click",function()
     {
         $(".navbar-collapse").collapse("hide");
@@ -98,10 +70,9 @@ videoList.forEach(vid =>{
 vid.onclick = () =>{
     videoList.forEach(remove =>{remove.classList.remove('active')});
     vid.classList.add('active');
-    let src = vid.querySelector('.list-video').src;
+    let src = vid.querySelector('.list-video').dataset.src;
     let title = vid.querySelector('.list-title').innerHTML;
-    document.querySelector('.main-video-container .main-video').src = src;
-    document.querySelector('.main-video-container .main-video').play();
+    document.querySelector('.main-video-container .main-video').src = src + '&autoplay=1';
     document.querySelector('.main-video-container .main-vid-title').innerHTML = title;
 };
 });
