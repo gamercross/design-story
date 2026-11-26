@@ -1,3 +1,5 @@
+> 이 사이트는 https://gamercross.github.io/design/ 로 옮겼어요 (2026년 11월)
+
 <div align="center">
 
 # 👋 Hello, I'm JaeYoup Lee
